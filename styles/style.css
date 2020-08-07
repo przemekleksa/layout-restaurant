@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #000;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    background: url('../img/pastaAndBasil.jpg');
+    background-size: cover; 
+    color: #f2f2f0;
+    box-shadow: inset 0px 100px 90px -39px rgba(0,0,0,0.75);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+header nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+header nav h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    /* margin: 0; */
+    color: #f2f2f0e5;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    font-size: 1.2rem;
+}
+
+header nav ul li::first-letter {
+    text-transform: uppercase;
+}
+
+header nav ul li {
+    font-size: 1.3rem;
+    font-weight: 600;
+    flex: 0 1 auto;
+    position: relative;
+    margin-right: 52px;
+}
+
+header > nav > ul > li:nth-child(8){
+    flex: 1 1 auto;
+}
+header > nav > ul > li:nth-child(7){
+    flex: 1 1 auto;
+}
+
+header nav ul li:last-child {
+    flex: 1 1 auto;
+}
+
+header nav ul li a i {
+    color: #cc9900;
+    transition: 0.5s all;
+}
+
+header nav ul li a i:hover {
+    color: #f2f2f0;
+}
+
+header nav ul li a {
+    color:#f2f2f0; 
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+header nav ul li a:hover {
+   color: #cc9900;
+}
+
+header nav ul li a:hover:before {
+    content: "______";
+    color: rgba(0, 0, 0, 0);
+    display: block;
+    position: absolute;
+    background: #c2bfb5;
+    height: 3px;
+    width: 100%;
+    top: -51px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 5.7rem;
+    font-family: 'Yeseva One', cursive;
+    margin: 100px 0 30px;
+    letter-spacing: 0px;
+    line-height: 1.3;
+    font-weight: 100;
+}
+
+.title img {
+    width: 250px;
+    margin: 0 auto 30px auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 140px 0;
+}
+
+.buttons button{
+    width: 228px;
+    height: 57px;
+    background-color: transparent;
+    color:#f2f2f0;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+
+
+.buttons button:focus {
+    outline: 3px solid #cc9900;
+}
+
+.buttons button:first-child {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #000;
+    margin-right: 20px
+}
+
+.buttons button:last-child {
+    background-color: #f2f2f034;
+    border: 1px solid #f2f2f0;
+}
+
+.buttons button:hover {
+    background-color: #cc9900a8;
+}
+
+main {
+    background-color: fuchsia;
+    font-family: lato;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.introduce {
+    padding: 107px 0;
+    background: url('../img/tile-1.png');
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    text-align: center;
+    width: 500px;
+    padding: 0 50px;
+    
+}
+
+.about h2 {
+    color: #cc9900;
+}
+
+.plate img {
+    width: 550px;
+    box-shadow: 0px 0px 54px 0px rgba(0,0,0,0.75);
+    border-radius: 100%;
+}
+
+.ingredients {
+    background: url('../img/basilInABucket.jpg');
+    transform: scaleX(-1);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ingredients article {
+    color: #f2f2f0;
+    width: 570px;
+    height: 560px;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin: 100px 215px 100px 100px;
+    transform: scaleX(-1);
+}
+
+.ingredients article h2 {
+    margin-top: 85px;
+}
+
+.ingredients article p {
+    margin: 20px 60px;
+}
+
+.food-pics {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.food-pics img {
+    background-color: rgba(0, 0, 0, 0.144);
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.menu {
+    padding: 107px 0;
+    background: url('../img/tile-2.png');
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* align-items: flex-end; */
+    align-content: center
+}
+
+
+.menu article {
+   flex: 0 0 40%;
+   /* margin: 0 0 0 60px; */
+   /* border: 1px solid black; */
+}
+
+.appetisers {
+    
+}
+
+.salads {
+   
+}
+
+.starters {
+    margin: 0 0 0 60px;
+}
+.main-dishes {
+    margin: 0 0 0 60px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+}
+.menu article ul {
+    list-style-type: none;
+}
+
+.menu article ul {
+    margin:0;
+    padding:0;
+}
+
+.menu article li {
+    padding: 15px;
+    position: relative;
+}
+
+.menu article ul li h3 {
+    margin: 0;
+    font-family: 'Yeseva One', cursive;
+    color: #cc9900;
+    font-weight: 100;
+}
+
+.menu article ul li .price {
+    font-family: 'Yeseva One', cursive;
+    color: #cc9900;
+    font-weight: 100;
+}
+
+
+.menu article ul li hr {
+    border-top: 1px solid #cc9900;
+}
+
+.menu article h2 {
+    color: #cc9900;
+    text-align: center;
+}
+
+.menu article img {
+    margin: 0 auto;
+    display: block;
+}
+
+.special {
+    border: 1px solid #cc9900;
+    /* position: relative; */
+}
+
+.special::before {
+    content: "Special";
+    position: absolute;
+    right: -1px;
+    top: -30px;
+    background-color: #cc990096;
+    padding: 5px 20px;
+    color: #f2f2f0;
+    /* border: 1px solid #cc9900; */
+}
+
+.reviews {
+    background: url('../img/panWithShashliks.jpg');
+    padding: 100px 0;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.reviews article {
+    color: #f2f2f0;
+    width: 770px;
+    height: 560px;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    /* margin: 100px 215px 100px 100px; */
+    padding: 50px 20px;
+    margin: 0 auto;
+    flex: 2 0;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.reviews article img {
+    display: inline;
+    text-align: center;
+}
+.reviews article blockquote {
+    quotes: "“" "”" "‘" "’";
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+.reviews article blockquote::before {
+    content: open-quote;
+    font-size: 5rem;
+    vertical-align: text-top;
+    float:left;
+}
+
+.reviews article blockquote::after {
+    content: close-quote;
+    font-size: 5rem;
+    vertical-align: top;
+    float: right;
+}
+
+.reservations {
+    display: flex;
+    background: url('../img/tile-1.png');
+    padding: 100px 200px;
+    text-align: center;
+}
+
+.reservations img {
+    margin: 0 30px 0 0;
+}
+
+.reservations>img:nth-child(2) {
+    margin: 0 100px 0 0;
+}
+
+.reservations h2 {
+    color: #cc9900;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.reservations > article > img {
+    text-align: center;
+    margin: 0;
+}
+
+.reservations article form {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+}
+
+.reservations article form div {
+    display: flex;
+    flex-direction: column;
+    flex: 0 47%;
+}
+
+.reservations article form div:nth-child(even) {
+    margin-left: 30px;
+}
+
+.reservations article form div label{
+    color: #cc9900;
+    margin: 30px 0 8px 0;
+    font-size: 1.2rem;
+}
+
+.reservations article form div input {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.reservations article form div input:focus {
+    outline: 1px solid #cc9000;
+}
+
+.reservations article form > input{
+    background-color: #cc9900;
+    border: 0px;
+    padding: 10px 60px;
+    color: #f2f2f0;
+    font-size: 1.2rem;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.reservations article form > input:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.reservations article form > input:focus {
+    outline: 1px solid #cc9900;
+}
+
+footer {
+    display:flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    color: #f2f2f0;
+    padding: 60px 0;
+    background-color: #191919;
+    font-family: lato;
+}
+
+footer > div > h3 {
+    font-size: 1.7rem;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 100;
+}
+
+footer > div > img {
+    margin: 0 0 27px 0;
+}
+
+footer > div {
+    flex: 0 29%;
+    text-align: center;
+}
+
+footer > div > p > span{
+    font-weight: 900;
+}
+
+footer > div > p {
+    margin: 0;
+}
+
+footer > div > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    width: 50%;
+    font-size: 1.5rem;
+    margin: 20px auto;
+}
+
+footer > div > ul > li > a {
+    color: #f2f2f0;
+    transition: 0.5s all;
+}
+
+footer > div > ul > li > a:hover {
+    color: #cc9900;
+}
